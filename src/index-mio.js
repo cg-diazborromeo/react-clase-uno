@@ -1,9 +1,16 @@
-import { MatchNombre } from "./tarea/Tarea2.js";
+import { PasswordInput } from "./tarea/Tarea2.js";
 
 ReactDOM.render(
-  <MatchNombre nombre="Gaston" />,
+  <PasswordInput minLength={8} />,
   document.getElementById("react-app")
 );
+
+// import { MatchNombre } from "./tarea/Tarea2.js";
+
+// ReactDOM.render(
+//   <MatchNombre nombre="Gaston" />,
+//   document.getElementById("react-app")
+// );
 
 //TAREA 1
 
