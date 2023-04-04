@@ -12,7 +12,17 @@
  * Para obtener el valor del input en el event handler, deberán usar la propiedad `event.target.value`.
  */
 
-export function MatchNombre(props) {}
+export function MatchNombre(props) {
+  const [value, setValue] = React.useState(false);
+  const nombre = props.nombre;
+
+  return (
+    <input
+      onChange={(event) => setValue(event.target.value)}
+      className={value === nombre ? "input " + "input-match" : "input"}
+    />
+  );
+}
 
 /*
  * Componentes como este son usados a menudo para hacer validaciones de inputs
