@@ -92,9 +92,9 @@ La ardilla era negra.`
 
 <BlogPost
   titulo="Ardillas"
-  parrafos={`Hoy vi una ardilla.
-La ardilla era negra, era más grande que otras ardillas, tenía muchos dientes grandes y encima andaba siempre en cuatro patas, moviendo la cola.
-Creo que puede haber sido un perro, dado que en Argentina no hay ardillas.`}
+  parrafos={`Hoy vi una ardilla. 
+  \nLa ardilla era negra, era más grande que otras ardillas, tenía muchos dientes grandes y encima andaba siempre en cuatro patas, moviendo la cola. 
+  \nCreo que puede haber sido un perro, dado que en Argentina no hay ardillas.`}
   autor={{
     nombre: "Tu nombre",
     titulo: "Tu título",
@@ -108,23 +108,20 @@ export function BlogPost(props) {
   return (
     <article className="post">
       <header className="post-header">
-        <h2 className="post-title">Ardillas</h2>
+        <h2 className="post-title">{props.titulo}</h2>
         <Tarjeta
-          nombre="Tu nombre"
-          titulo="Tu titulo"
-          imagen="URL de tu imagen"
+          nombre={props.autor.nombre}
+          titulo={props.autor.titulo}
+          imagen={props.autor.imagen}
         />
       </header>
-      <p className="post-paragraph">Hoy vi una ardilla.</p>
-      <p className="post-paragraph">
-        La ardilla era negra, era más grande que otras ardillas, tenía muchos
-        dientes grandes y encima andaba siempre en cuatro patas, moviendo la
-        cola.
-      </p>
-      <p className="post-paragraph">
-        Creo que puede haber sido un perro, dado que en Argentina no hay
-        ardillas.
-      </p>
+      <div className="parragraphs">
+        {props.parrafos.split("\n").map((parrafo, index) => (
+          <p key={index} className="post-paragraph">
+            {parrafo}
+          </p>
+        ))}
+      </div>
     </article>
   );
 }
