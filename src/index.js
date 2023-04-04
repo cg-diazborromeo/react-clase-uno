@@ -1,6 +1,9 @@
-import { Welcome } from './components/Welcome.js';
+import { Welcome } from "./components/Welcome.js";
 
-ReactDOM.render(<Welcome nombre="Julián" />, document.getElementById('react-app'));
+ReactDOM.render(
+  <Welcome nombre="Julián" />,
+  document.getElementById("react-app")
+);
 
 // import { Button } from './components/Button.js';
 
