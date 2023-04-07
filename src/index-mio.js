@@ -1,3 +1,5 @@
+import { MatchNombre } from "./tarea/Tarea2.js";
+import { PasswordInput } from "./tarea/Tarea2.js";
 import { ValidationInput } from "./tarea/Tarea2.js";
 
 ReactDOM.render(
@@ -20,14 +22,10 @@ ReactDOM.render(
   document.getElementById("react-app")
 );
 
-// import { PasswordInput } from "./tarea/Tarea2.js";
-
 // ReactDOM.render(
 //   <PasswordInput minLength={8} />,
 //   document.getElementById("react-app")
 // );
-
-// import { MatchNombre } from "./tarea/Tarea2.js";
 
 // ReactDOM.render(
 //   <MatchNombre nombre="Gaston" />,
@@ -36,6 +34,7 @@ ReactDOM.render(
 
 //TAREA 1
 
+// import { Tarjeta } from "./tarea/Tarea1.js";
 // import { BlogPost } from "./tarea/Tarea1.js";
 
 // ReactDOM.render(
@@ -53,8 +52,6 @@ ReactDOM.render(
 //   />,
 //   document.getElementById("react-app")
 // );
-
-// import { Tarjeta } from "./tarea/Tarea1.js";
 
 // ReactDOM.render(
 //   <Tarjeta
