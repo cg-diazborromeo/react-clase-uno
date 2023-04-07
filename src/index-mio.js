@@ -1,9 +1,31 @@
-import { PasswordInput } from "./tarea/Tarea2.js";
+import { ValidationInput } from "./tarea/Tarea2.js";
 
 ReactDOM.render(
-  <PasswordInput minLength={8} />,
+  //   <ValidationInput
+  //     validation={(value) => value.length >= 8}
+  //     isPassword={true}
+  //   />,
+  //   <ValidationInput
+  //     validation={(value) => !value.match(" ")}
+  //     isPassword={true}
+  //   />,
+  <ValidationInput
+    validation={(value) =>
+      value.match(
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      )
+    }
+    isPassword={false}
+  />,
   document.getElementById("react-app")
 );
+
+// import { PasswordInput } from "./tarea/Tarea2.js";
+
+// ReactDOM.render(
+//   <PasswordInput minLength={8} />,
+//   document.getElementById("react-app")
+// );
 
 // import { MatchNombre } from "./tarea/Tarea2.js";
 
