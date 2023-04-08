@@ -1,26 +1,43 @@
-import { MatchNombre } from "./tarea/Tarea2.js";
-import { PasswordInput } from "./tarea/Tarea2.js";
-import { ValidationInput } from "./tarea/Tarea2.js";
+import { UncontrolledCheckbox } from "./tarea/Tarea3.js";
+import { CheckboxList } from "./tarea/Tarea3.js";
 
 ReactDOM.render(
-  //   <ValidationInput
-  //     validation={(value) => value.length >= 8}
-  //     isPassword={true}
-  //   />,
-  //   <ValidationInput
-  //     validation={(value) => !value.match(" ")}
-  //     isPassword={true}
-  //   />,
-  <ValidationInput
-    validation={(value) =>
-      value.match(
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      )
-    }
-    isPassword={false}
+  //   <UncontrolledCheckbox name="Le gusta la pizza?: " initialChecked={false} />,
+  <CheckboxList
+    items={{
+      uno: false,
+      dos: true,
+      tres: false,
+    }}
   />,
   document.getElementById("react-app")
 );
+
+//TAREA 2
+
+// import { MatchNombre } from "./tarea/Tarea2.js";
+// import { PasswordInput } from "./tarea/Tarea2.js";
+// import { ValidationInput } from "./tarea/Tarea2.js";
+
+// ReactDOM.render(
+//   <ValidationInput
+//     validation={(value) => value.length >= 8}
+//     isPassword={true}
+//   />,
+//   <ValidationInput
+//     validation={(value) => !value.match(" ")}
+//     isPassword={true}
+//   />,
+//   <ValidationInput
+//     validation={(value) =>
+//       value.match(
+//         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+//       )
+//     }
+//     isPassword={false}
+//   />,
+//   document.getElementById("react-app")
+// );
 
 // ReactDOM.render(
 //   <PasswordInput minLength={8} />,
