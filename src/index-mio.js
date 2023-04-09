@@ -1,17 +1,34 @@
-import { UncontrolledCheckbox } from "./tarea/Tarea3.js";
-import { CheckboxList } from "./tarea/Tarea3.js";
+//TAREA 4
+import { ControlledCheckbox } from "./tarea/Tarea4.js";
+import { CheckboxListWithState } from "./tarea/Tarea4.js";
 
 ReactDOM.render(
-  //   <UncontrolledCheckbox name="Le gusta la pizza?: " initialChecked={false} />,
-  <CheckboxList
+  <CheckboxListWithState
     items={{
-      uno: false,
+      uno: true,
       dos: true,
       tres: false,
     }}
   />,
   document.getElementById("react-app")
 );
+
+//TAREA 3
+
+// import { UncontrolledCheckbox } from "./tarea/Tarea3.js";
+// import { CheckboxList } from "./tarea/Tarea3.js";
+
+// ReactDOM.render(
+//     <UncontrolledCheckbox name="Le gusta la pizza?: " initialChecked={false} />,
+//   <CheckboxList
+//     items={{
+//       uno: false,
+//       dos: true,
+//       tres: false,
+//     }}
+//   />,
+//   document.getElementById("react-app")
+// );
 
 //TAREA 2
 
