@@ -23,6 +23,9 @@ export function UncontrolledCheckbox(props) {
   );
 }
 
+//En la resolucion de la tardea, uso setChecked(!checked) para cambiar el estado.
+//Tambien depende donde esta el estado, para el controlled o uncontrolled: para que sea controlled tiene que estar mas arriba (en este caso en el CheckboxList)
+
 /*
  * Este componente debe renderizar una lista de componentes UncontrolledCheckbox.
  * Debes completar ese componente antes de completar este.
